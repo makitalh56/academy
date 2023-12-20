@@ -27,11 +27,11 @@ init_db()
 def get_users():
     name = request.args.get('name')
 
-    query = f"SELECT * FROM users WHERE name = '{name}'"
+    query = f"SELECT * FROM users WHERE name = ?"
 
     conn = sqlite3.connect('example.db')
     cursor = conn.cursor()
-    cursor.execute(query)
+    cursor.execute(query, (name,))
     users = cursor.fetchall()
     conn.close()
 
