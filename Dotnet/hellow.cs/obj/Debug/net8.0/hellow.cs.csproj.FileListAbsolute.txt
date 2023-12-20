@@ -1,0 +1,14 @@
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\bin\Debug\net8.0\hellow.cs.exe
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\bin\Debug\net8.0\hellow.cs.deps.json
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\bin\Debug\net8.0\hellow.cs.runtimeconfig.json
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\bin\Debug\net8.0\hellow.cs.dll
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\bin\Debug\net8.0\hellow.cs.pdb
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\hellow.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\hellow.cs.AssemblyInfoInputs.cache
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\hellow.cs.AssemblyInfo.cs
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\hellow.cs.csproj.CoreCompileInputs.cache
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\hellow.cs.dll
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\refint\hellow.cs.dll
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\hellow.cs.pdb
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\hellow.cs.genruntimeconfig.cache
+C:\Users\Hanna\Academy\Dotnet\hellow.cs\obj\Debug\net8.0\ref\hellow.cs.dll

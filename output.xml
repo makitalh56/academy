@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231127 21:37:49.617" rpa="false" schemaversion="4">
+<suite id="s1" name="Requesttest" source="c:\Users\Hanna\Academy\robot\requesttest.robot">
+<test id="s1-t1" name="Quick Get A JSON Body Test" line="12">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>https://jsonplaceholder.typicode.com/posts/1</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20231127 21:37:51.479" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts/1 
+ path_url=/posts/1 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20231127 21:37:51.479" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts/1 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 27 Nov 2023 19:37:52 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699656709&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=8tdXkwCREVYFbPrdt6YiAgYhpl2lojGxiZncsduUuPY%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1699656709&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=8tdXkwCREVYFbPrdt6YiAgYhpl2lojGxiZncsduUuPY%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1699656711', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '16950', 'Server': 'cloudflare', 'CF-RAY': '82ccd4090c084021-SIN', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+} 
+ </msg>
+<msg timestamp="20231127 21:37:51.479" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20231127 21:37:49.906" endtime="20231127 21:37:51.479"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>1</arg>
+<arg>${response.json()}[id]</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20231127 21:37:51.495" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20231127 21:37:51.479" endtime="20231127 21:37:51.495"/>
+</kw>
+<status status="PASS" starttime="20231127 21:37:49.906" endtime="20231127 21:37:51.495"/>
+</test>
+<status status="PASS" starttime="20231127 21:37:49.625" endtime="20231127 21:37:51.506"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Requesttest">Requesttest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
